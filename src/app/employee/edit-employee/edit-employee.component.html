@@ -1,0 +1,30 @@
+<div [dir]="'direction' | translate">
+  <h2>{{'AddEmployee.EmployeeInformation' | translate}}</h2>
+  <form [formGroup]="form" (ngSubmit)="submitForm()">
+    <input type="text" id="name" formControlName="name" required placeholder="{{'Name' | translate}}" />
+    <input type="text" id="age" formControlName="age" required placeholder="{{'Age' | translate}}" />
+    <input type="text" id="nationalId" formControlName="nationalId" required placeholder="{{'NationalID' | translate}}" />
+    <input type="text" id="phone" formControlName="phone" required placeholder="{{'Phone' | translate}}" />
+    <input type="text" id="mobileNumber" formControlName="mobileNumber" required placeholder="{{'MobileNumber' | translate}}" />
+    <input type="text" id="position" formControlName="position" required placeholder="{{'Position' | translate}}" />
+    <select formControlName="DepartmentId" class="form-select">
+      <option value="0" selected>{{'AddEmployee.ChooseDepartment' | translate}}</option>
+      <option *ngFor="let dept of Departments" [ngValue]="dept.departmentId">
+        {{ dept.departmentName }}
+      </option>
+    </select>
+    <div style="display: flex; align-items: center; gap: 25px; justify-content: space-between;">
+      <div>
+        <mat-form-field>
+          <mat-label>{{'HiringDate' | translate}}</mat-label>
+          <input matInput [matDatepicker]="picker1" formControlName="hiringDate" required />
+          <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <mat-slide-toggle formControlName="isActive" color="primary">{{'AddEmployee.Active' | translate}}</mat-slide-toggle>
+    </div>
+
+    <button type="submit" [disabled]="!form.valid">{{'AddEmployee.Submit' | translate}}</button>
+  </form>
+</div>

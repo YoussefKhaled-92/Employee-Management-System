@@ -1,0 +1,65 @@
+<h1 id="tableLabel" [dir]="'direction' | translate">{{ 'Employees' | translate }}</h1>
+<div class="d-flex justify-content-start align-items-center vh-2" [dir]="'direction' | translate">
+  <!-- <button class="m-3 col-1 h-25 h-6" (click)="SelectName(searchInput.value)">Search</button> -->
+  <!-- <div class="mb-6  m-3">
+    <select class="form-select-s" [(ngModel)]="DepartmentId" (ngModelChange)="SelectDepartment($event)" >
+      <option value="0" selected>All</option>
+      <option *ngFor="let Department of Departments" [value]="Department.departmentId">{{Department.departmentName}}</option>
+    </select>
+  </div> -->
+  <button type="button" class="btn btn-success" [routerLink]="['./add']">{{ 'Add' | translate }}</button>
+</div>
+
+<p *ngIf="!Employees"><em>Loading...</em></p>
+
+<div class="table-responsive" [dir]="'direction' | translate">
+  <table class="table table-striped text-center" aria-labelledby="tableLabel" *ngIf="Employees">
+    <thead>
+      <tr>
+        <th>{{ 'Name' | translate }}</th>
+        <th>{{ 'Age' | translate }}</th>
+        <th>{{ 'NationalID' | translate }}</th>
+        <th>{{ 'Phone' | translate }}</th>
+        <th>{{ 'MobileNumber' | translate }}</th>
+        <th>{{ 'Position' | translate }}</th>
+        <th>{{ 'Department' | translate }}</th>
+        <th>{{ 'Status' | translate }}</th>
+        <th>{{ 'HiringDate' | translate }}</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="
+          let Employee of Employees
+            | paginate
+              : {
+                  id: 'paginated',
+                  itemsPerPage: countPerPage,
+                  currentPage: page,
+                  totalItems: totalCount,
+                }
+        "
+      >
+        <td>{{ Employee.name }}</td>
+        <td>{{ Employee.age }}</td>
+        <td>{{ Employee.nationalId }}</td>
+        <td>{{ Employee.phone }}</td>
+        <td>{{ Employee.mobileNumber }}</td>
+        <td>{{ Employee.position }}</td>
+        <td>{{ Employee.departmentName }}</td>
+        <td *ngIf="Employee.isActive">Active</td>
+        <td *ngIf="!Employee.isActive">Not Active</td>
+        <td>{{ Employee.hiringDate | date: 'yyyy-MM-dd' }}</td>
+        <td>
+          <div class="d-flex gap-2">
+            <button type="button" class="btn btn-primary" (click)="Edit(Employee)">{{ 'Edit' | translate }}</button>
+            <button type="button" class="btn btn-danger" (click)="Delete(Employee)">{{ 'Delete' | translate }}</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<pagination-controls (pageChange)="getEmployees($event)" id="paginated"></pagination-controls>

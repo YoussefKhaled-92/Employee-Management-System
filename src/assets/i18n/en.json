@@ -1,0 +1,82 @@
+{
+  "LANGUAGE": "English",
+  "LANGUAGE_CODE": "en",
+  "direction": "ltr",
+  "APP_TITLE": "Employee Management System",
+  "Home": "Home",
+  "Employees": "Employees",
+  "Name": "Name",
+  "Age": "Age",
+  "NationalID": "National ID",
+  "Phone": "Phone",
+  "MobileNumber": "Mobile Number",
+  "Position": "Position",
+  "Department": "Department",
+  "Status": "Status",
+  "HiringDate": "Hiring Date",
+  "Add": "Add",
+  "Edit": "Edit",
+  "Delete": "Delete",
+  "FOOTER": {
+    "COPYRIGHT": "Made with ❤️ Youssef Khaled",
+    "SOCIAL_MEDIA": {
+      "FACEBOOK": "Facebook",
+      "PINTEREST": "Pinterest",
+      "SKYPE": "Skype",
+      "TWITTER": "Twitter"
+    },
+    "ABOUT": {
+      "TITLE": "About",
+      "ABOUT_US": "About Us",
+      "CORPORATE_SALE": "Corporate Sale",
+      "TERMS_POLICY": "Terms & Policy",
+      "COMMUNITY": "Community"
+    },
+    "SUPPORT": {
+      "TITLE": "Support",
+      "HELP": "Help",
+      "SUPPORT": "Support",
+      "PRIVACY_POLICY": "Privacy Policy",
+      "TERMS_CONDITIONS": "Term & Conditions",
+      "HELP_SUPPORT": "Help & Support"
+    },
+    "CONTACT": {
+      "TITLE": "Contact",
+      "CALL_CENTRE": "Call Centre",
+      "EMAIL_US": "Email Us",
+      "TERMS_CONDITIONS": "Term & Conditions",
+      "HELP_CENTER": "Help Center"
+    }
+  },
+  "AddEmployee": {
+    "EmployeeInformation": "Employee Information",
+    "NameValidations": {
+      "Required": "Name is requied.",
+      "Alphabetic": "Name must be alphabetic."
+    },
+    "AgeValidations": {
+      "Required": "Age is required.",
+      "Range": "Age must be between 10-100."
+    },
+    "NationalIdValidations": {
+      "Required": "National Id is required.",
+      "NumberOfDigits": "National Id must be 14 digit."
+    },
+    "PhoneValidations": {
+      "NumberOfDigits": "Phone must be 9 digit."
+    },
+    "MobileNumberValidations": {
+      "Required": "Mobile number is required.",
+      "NumberOfDigits": "Mobile number must be 11 digit."
+    },
+    "PositionValidations": {
+      "Required": "Position is required."
+    },
+    "DepartmentValidations": {
+      "Required": "Department is required."
+    },
+    "Active": "Active",
+    "ChooseDepartment": "Choose Department",
+    "Submit": "Submit"
+  }
+}

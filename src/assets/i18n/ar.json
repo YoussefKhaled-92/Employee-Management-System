@@ -1,0 +1,82 @@
+{
+  "LANGUAGE": "عربي",
+  "LANGUAGE_CODE": "ar",
+  "direction": "rtl",
+  "APP_TITLE": "نظام إدارة الموظفين",
+  "Home": "الرئيسية",
+  "Employees": "الموظفين",
+  "Name": "الاسم",
+  "Age": "العمر",
+  "NationalID": "الرقم القومي",
+  "Phone": "الهاتف",
+  "MobileNumber": "رقم الموبايل",
+  "Position": "الوظيفة",
+  "Department": "الشركه",
+  "Status": "الحالة",
+  "HiringDate": "تاريخ التعيين",
+  "Add": "إضافة",
+  "Edit": "تعديل",
+  "Delete": "حذف",
+  "FOOTER": {
+    "COPYRIGHT": "صنع بحب ❤️ يوسف خالد",
+    "SOCIAL_MEDIA": {
+      "FACEBOOK": "فيسبوك",
+      "PINTEREST": "بينتيريست",
+      "SKYPE": "سكايب",
+      "TWITTER": "تويتر"
+    },
+    "ABOUT": {
+      "TITLE": "عن",
+      "ABOUT_US": "من نحن",
+      "CORPORATE_SALE": "المبيعات للشركات",
+      "TERMS_POLICY": "الشروط والسياسات",
+      "COMMUNITY": "المجتمع"
+    },
+    "SUPPORT": {
+      "TITLE": "الدعم",
+      "HELP": "المساعدة",
+      "SUPPORT": "الدعم",
+      "PRIVACY_POLICY": "سياسة الخصوصية",
+      "TERMS_CONDITIONS": "الشروط والأحكام",
+      "HELP_SUPPORT": "المساعدة والدعم"
+    },
+    "CONTACT": {
+      "TITLE": "الاتصال",
+      "CALL_CENTRE": "مركز الاتصال",
+      "EMAIL_US": "ارسل لنا بريد",
+      "TERMS_CONDITIONS": "الشروط والأحكام",
+      "HELP_CENTER": "مركز المساعدة"
+    }
+  },
+  "AddEmployee": {
+    "EmployeeInformation": "معلومات الموظف",
+    "NameValidations": {
+      "Required": "يجب ادخال الاسم.",
+      "Alphabetic": "الاسم يجب ان يكون مكون من احرف فقط."
+    },
+    "AgeValidations": {
+      "Required": "يجب ادخال العمر.",
+      "Range": "العمر يجب ان يكون بين 0-100."
+    },
+    "NationalIdValidations": {
+      "Required": "يجب ادخال الرقم القومي.",
+      "NumberOfDigits": "الرقم القومي يجب ان يكون 14 رقم."
+    },
+    "PhoneValidations": {
+      "NumberOfDigits": "الهاتف يجب ان يكون 9 ارقام."
+    },
+    "MobileNumberValidations": {
+      "Required": "يجب ادخال رقم الموبايل.",
+      "NumberOfDigits": "رقم الموبايل يجب ان يكون 11 رقم."
+    },
+    "PositionValidations": {
+      "Required": "يجب ادخال الوظيفه."
+    },
+    "DepartmentValidations": {
+      "Required": "يجب ادخال الشركه."
+    },
+    "Active": "فعال",
+    "ChooseDepartment": "اختر الشركه",
+    "Submit": "ادخال"
+  }
+}
